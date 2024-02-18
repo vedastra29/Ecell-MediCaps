@@ -13,11 +13,12 @@
 
 .videoBg {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
-  z-index: -2;
-  opacity: 0.2;
+  z-index: -1;
 }
 
 .herowrapper {
@@ -27,7 +28,6 @@
   top: 0;
   display: flex;
   justify-content: center;
-  z-index: 2;
 }
 .herowrapper .heroImg {
   display: flex;
@@ -51,6 +51,8 @@
   color: white;
   font-size: x-large;
   line-height: 3.8rem;
+  font-size: x-large;
+  line-height: 3.5rem;
   padding-left: 2rem;
 }
 .content .btn {
@@ -96,15 +98,14 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  /* background-color: #00000055; */
+  /*background-color: #00000055; */
 }
 .overlay video {
-  position: absolute;
+  position: relative;
   height: 100vh;
   width: 100%;
   object-fit: cover;
   opacity: 0.3;
-  z-index: 1;
 }
 
 @media (max-width: 1300px) {
